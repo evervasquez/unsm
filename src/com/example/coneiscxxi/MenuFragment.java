@@ -1,6 +1,7 @@
-package com.example.menu;
+package com.example.coneiscxxi;
 
 import com.actionbarsherlock.view.MenuItem;
+import com.example.menu.R;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -65,10 +66,10 @@ public class MenuFragment extends ListFragment {
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
 
-	        case R.id.menu_search:
+	        //case R.id.menu_search:
 	            //onSearchRequested();
 
-	            return true;
+	          //  return true;
 
 	        default:
 	            return onOptionsItemSelected(item);

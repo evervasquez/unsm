@@ -1,8 +1,9 @@
-package com.example.menu;
+package com.example.coneiscxxi;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.example.menu.R;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
 import android.annotation.SuppressLint;
@@ -21,7 +22,7 @@ public class MainActivity extends SlidingFragmentActivity {
 		setTheme(R.style.Theme_Sherlock_Light);
 		super.onCreate(savedInstanceState);
 		
-		getSupportActionBar().setTitle("UNSM");
+		getSupportActionBar().setTitle("CONEISC");
 		
 		
 		mViewPager = new ViewPager(this);
@@ -46,7 +47,7 @@ public class MainActivity extends SlidingFragmentActivity {
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		getSupportActionBar().setDisplayShowCustomEnabled(false);
-		getSupportActionBar().setSubtitle("Sistemas");
+		getSupportActionBar().setSubtitle("xxi");
 	}
 
 	@Override
