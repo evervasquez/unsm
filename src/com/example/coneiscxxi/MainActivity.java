@@ -22,9 +22,8 @@ public class MainActivity extends SlidingFragmentActivity {
 		setTheme(R.style.Theme_Sherlock_Light);
 		super.onCreate(savedInstanceState);
 		
-		getSupportActionBar().setTitle("CONEISC");
-		
-		
+		getSupportActionBar().setTitle("CONEISCXXI");
+
 		mViewPager = new ViewPager(this);
 		mViewPager.setId(R.id.pager);
 		setContentView(R.layout.activity_main);
@@ -41,13 +40,18 @@ public class MainActivity extends SlidingFragmentActivity {
 		menu = getSlidingMenu();
 		menu.setShadowWidthRes(R.dimen.shadow_width);
 		menu.setShadowDrawable(R.drawable.sombra);
+		
 		menu.setBehindOffset(60);
 		menu.setFadeDegree(0.35f);
-		//menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);	
+		menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);	
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		getSupportActionBar().setDisplayShowCustomEnabled(false);
-		getSupportActionBar().setSubtitle("xxi");
+		//getSupportActionBar().setSubtitle("xxi");
+		
+		
+            
+        
 	}
 
 	@Override
@@ -58,10 +62,13 @@ public class MainActivity extends SlidingFragmentActivity {
 	}
 
 	public boolean onOptionsItemSelected(MenuItem item) {
+
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			toggle();
 			return true;
+		case R.id.actualizar:
+			return false;
 		default:
 			return onOptionsItemSelected(item);
 		}

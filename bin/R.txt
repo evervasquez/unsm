@@ -282,7 +282,6 @@ int drawable navigation_refresh 0x7f020072
 int drawable sombra 0x7f020073
 int drawable wifi 0x7f020074
 int drawable world 0x7f020075
-int id about 0x7f04003e
 int id abs__action_bar 0x7f040027
 int id abs__action_bar_container 0x7f040026
 int id abs__action_bar_subtitle 0x7f040016
@@ -331,8 +330,7 @@ int id homeAsUp 0x7f040006
 int id left 0x7f040010
 int id listMode 0x7f040002
 int id margin 0x7f040012
-int id menu_search 0x7f04003d
-int id menu_settings 0x7f04003f
+int id menu_settings 0x7f04003d
 int id normal 0x7f040001
 int id pager 0x7f040038
 int id right 0x7f040011

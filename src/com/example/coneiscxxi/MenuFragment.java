@@ -25,12 +25,18 @@ public class MenuFragment extends ListFragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		SampleAdapter adapter = new SampleAdapter(getActivity());
-		adapter.add(new SampleItem("Sample List",android.R.drawable.ic_menu_search));
-		adapter.add(new SampleItem("Sample List",android.R.drawable.ic_menu_search));
-		adapter.add(new SampleItem("Sample List",android.R.drawable.ic_menu_search));
-		adapter.add(new SampleItem("Sample List",android.R.drawable.ic_menu_search));
-		adapter.add(new SampleItem("Sample List",android.R.drawable.ic_menu_search));
-		adapter.add(new SampleItem("Sample List",android.R.drawable.ic_menu_search));
+		adapter.add(new SampleItem("Conocenos",
+				android.R.drawable.ic_menu_search));
+		adapter.add(new SampleItem("XXICONEISC",
+				android.R.drawable.ic_menu_search));
+		adapter.add(new SampleItem("Cronograma",
+				android.R.drawable.ic_menu_search));
+		adapter.add(new SampleItem("Costo de vida",
+				android.R.drawable.ic_menu_search));
+		adapter.add(new SampleItem("Como llegar",
+				android.R.drawable.ic_menu_search));
+		adapter.add(new SampleItem("Agencias",
+				android.R.drawable.ic_menu_search));
 		setListAdapter(adapter);
 	}
 
@@ -50,30 +56,38 @@ public class MenuFragment extends ListFragment {
 			super(context, 0);
 		}
 
+		
 		public View getView(int position, View convertView, ViewGroup parent) {
 			if (convertView == null) {
-	convertView = LayoutInflater.from(getContext()).inflate(R.layout.menu_row, null);
+				convertView = LayoutInflater.from(getContext()).inflate(
+						R.layout.menu_row, null);
 			}
-			ImageView icon = (ImageView) convertView.findViewById(R.id.row_icon);
+			ImageView icon = (ImageView) convertView
+					.findViewById(R.id.row_icon);
 			icon.setImageResource(getItem(position).iconRes);
-			TextView title = (TextView) convertView.findViewById(R.id.row_title);
+			TextView title = (TextView) convertView
+					.findViewById(R.id.row_title);
 			title.setText(getItem(position).tag);
+			//Toast.makeText(this.getContext(), "Posicion "+position, Toast.LENGTH_SHORT).show();
+	        //toast.show();
 			return convertView;
 		}
 
 	}
 	
+	
 	public boolean onOptionsItemSelected(MenuItem item) {
-	    switch (item.getItemId()) {
+		//Toast.makeText(this.getActivity(), "Posicion "+item.getItemId(), Toast.LENGTH_SHORT).show();
+		switch (item.getItemId()) {
 
-	        //case R.id.menu_search:
-	            //onSearchRequested();
+		// case R.id.menu_search:
+		// onSearchRequested();
 
-	          //  return true;
-
-	        default:
-	            return onOptionsItemSelected(item);
-	    }
+		// return true;
+		
+		default:
+			return onOptionsItemSelected(item);
+		}
 	}
 
 }

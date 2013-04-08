@@ -1056,7 +1056,6 @@ containing a value of this type.
         public static final int world=0x7f020075;
     }
     public static final class id {
-        public static final int about=0x7f04003e;
         public static final int abs__action_bar=0x7f040027;
         public static final int abs__action_bar_container=0x7f040026;
         public static final int abs__action_bar_subtitle=0x7f040016;
@@ -1105,8 +1104,7 @@ containing a value of this type.
         public static final int left=0x7f040010;
         public static final int listMode=0x7f040002;
         public static final int margin=0x7f040012;
-        public static final int menu_search=0x7f04003d;
-        public static final int menu_settings=0x7f04003f;
+        public static final int menu_settings=0x7f04003d;
         public static final int normal=0x7f040001;
         public static final int pager=0x7f040038;
         public static final int right=0x7f040011;
@@ -1262,6 +1260,8 @@ containing a value of this type.
         public static final int TextAppearance_Sherlock_Light_Widget_PopupMenu_Large=0x7f0a0043;
         public static final int TextAppearance_Sherlock_Light_Widget_PopupMenu_Small=0x7f0a0045;
         public static final int TextAppearance_Sherlock_Small=0x7f0a004b;
+        /**  <item name="android:textAllCaps">@bool/abs__config_actionMenuItemAllCaps</item>  
+         */
         public static final int TextAppearance_Sherlock_Widget_ActionBar_Menu=0x7f0a0038;
         public static final int TextAppearance_Sherlock_Widget_ActionBar_Subtitle=0x7f0a003b;
         public static final int TextAppearance_Sherlock_Widget_ActionBar_Subtitle_Inverse=0x7f0a003c;
@@ -1287,6 +1287,9 @@ containing a value of this type.
         public static final int Widget=0x7f0a0000;
         public static final int Widget_Sherlock_ActionBar=0x7f0a0002;
         public static final int Widget_Sherlock_ActionBar_Solid=0x7f0a0003;
+        /**   <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">12dip</item> 
+         */
         public static final int Widget_Sherlock_ActionBar_TabBar=0x7f0a000a;
         public static final int Widget_Sherlock_ActionBar_TabText=0x7f0a000d;
         public static final int Widget_Sherlock_ActionBar_TabView=0x7f0a0007;
@@ -1326,6 +1329,8 @@ containing a value of this type.
         public static final int Widget_Sherlock_ListView_DropDown=0x7f0a0027;
         public static final int Widget_Sherlock_PopupMenu=0x7f0a001c;
         public static final int Widget_Sherlock_PopupWindow_ActionMode=0x7f0a002c;
+        /**  <item name="android:animationResolution">33</item>  
+         */
         public static final int Widget_Sherlock_ProgressBar=0x7f0a002e;
         public static final int Widget_Sherlock_ProgressBar_Horizontal=0x7f0a0030;
         public static final int Widget_Sherlock_SearchAutoCompleteTextView=0x7f0a0034;
