@@ -26,7 +26,7 @@ public class MainActivity extends SlidingFragmentActivity {
 
 		mViewPager = new ViewPager(this);
 		mViewPager.setId(R.id.pager);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.mapa);
 		
 		final ActionBar bar = getSupportActionBar();
 		bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -34,7 +34,9 @@ public class MainActivity extends SlidingFragmentActivity {
 		mTabsAdapter = new TabsAdapter(this, mViewPager);
 		mTabsAdapter.addTab(bar.newTab().setText("Inicio"), Inicio.class, null);
 		mTabsAdapter.addTab(bar.newTab().setText("Descubre"), Descubre.class, null);
-		mTabsAdapter.addTab(bar.newTab().setText("Cuenta"), Cuenta.class, null);
+		mTabsAdapter.addTab(bar.newTab().setText("Cuenta"), mapa.class, null);
+		
+		//mTabsAdapter.onTabSelected(this, bar.)
 		
 		setBehindContentView(R.layout.menu);
 		menu = getSlidingMenu();

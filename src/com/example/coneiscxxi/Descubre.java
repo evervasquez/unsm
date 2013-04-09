@@ -1,9 +1,10 @@
 package com.example.coneiscxxi;
 
-import com.example.menu.R;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.example.menu.R;
 
 public class Descubre extends Activity{
 	
