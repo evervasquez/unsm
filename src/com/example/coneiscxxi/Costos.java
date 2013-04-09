@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Inicio extends SherlockFragment{
+public class Costos extends SherlockFragment{
 	
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
-		return inflater.inflate(R.layout.activity_main, container,false);
+		return inflater.inflate(R.layout.activity_costos, container,false);
 	}
 }
