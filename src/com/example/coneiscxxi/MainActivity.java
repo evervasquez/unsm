@@ -24,7 +24,6 @@ public class MainActivity extends SlidingFragmentActivity {
 		setTheme(R.style.Theme_Sherlock_Light);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
 		final ActionBar bar = getSupportActionBar();
 		getSupportActionBar().setTitle("CONEISCXXI");
 		bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
